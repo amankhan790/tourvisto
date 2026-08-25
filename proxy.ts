@@ -9,6 +9,7 @@ export const config = {
         // Always run for Clerk's auto-proxy path
         '/__clerk/:path*',
         // Always run for API routes
+        '/api/webhooks(.*)',
         '/(api|trpc)(.*)',
     ],
 };
